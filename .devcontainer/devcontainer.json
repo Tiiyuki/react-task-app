@@ -1,0 +1,6 @@
+{
+  "name": "react-task-app",
+  "dockerComposeFile": "../compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app"
+}
