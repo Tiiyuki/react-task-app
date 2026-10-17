@@ -12,3 +12,5 @@ export interface Task {
   createdAt: string;     // 作成日時
   updatedAt: string;     // 更新日時
 }
+
+export type TaskFormData = Omit<Task, "id" | "status" | "createdAt" | "updatedAt">;

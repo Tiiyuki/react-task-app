@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import  type { Priority, Task } from "../../../types/task";
+import type { Priority, Task } from "../../../types/task";
 import styles from "../styles/taskCard.module.css";
 
 type Props = {
