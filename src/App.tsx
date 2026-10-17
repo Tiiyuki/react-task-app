@@ -4,9 +4,13 @@ import TaskListPage from "./pages/tasks/taskListPage";
 import TaskDetailPage from "./pages/tasks/taskDetailPage";
 import TaskCreatePage from "./pages/tasks/taskCreatePage";
 import TaskEditPage from "./pages/tasks/taskEditPage";
+import Header from "./shared/components/Header";
 
 function App() {
   return (
+     <>
+    <Header />
+
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/tasks" element={<TaskListPage />} />
@@ -14,6 +18,7 @@ function App() {
       <Route path="/tasks/new" element={<TaskCreatePage />} />
       <Route path="/tasks/:id/edit" element={<TaskEditPage />} />  {/* タスク編集ページのルーティング */}
     </Routes>
+    </>
   );
 }
 
